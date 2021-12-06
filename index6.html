@@ -1,0 +1,20 @@
+Algoritmo monto_a_pagar
+	HE <- 0
+	HS <- 0
+	Definir HES,HF,HR,pago Como Entero
+	Leer HE,HS
+	HES <- HS-HE
+	HF <- HE-HES
+	HR <- HES-1
+	// pago= 1000
+	pago <- 1000+(HR+600)
+	Si HE>=1 Entonces
+		Escribir 'PAGAR ',HE,' HORAS'
+		Si HF<=1 Entonces
+			Escribir ' PAGAR ',HF,' FRACCION'
+		SiNo
+			Escribir '$',pago,''
+		FinSi
+		HES <- HE+1
+	FinSi
+FinAlgoritmo

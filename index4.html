@@ -1,0 +1,35 @@
+Algoritmo calificaciones_letras
+	
+	Definir cal Como Entero
+	Definir let Como Caracter
+	
+	
+	Escribir "Ingresar calificacion"
+	Leer cal
+	
+	Si ( cal >=19 y cal <=20) Entonces
+		let <-"A"
+	SiNo
+		
+		si(cal >= 16 y cal<= 18) Entonces
+			let<- "B"
+		SiNo
+			SI (cal >= 13 y cal <= 15) Entonces
+				let <- "C"
+			SiNo
+				si (cal >= 10 y cal <= 12) Entonces
+					let <- "D"
+				SiNo
+					
+					Si (cal >= 1 y cal <= 9) Entonces
+						let <- "E"
+						
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+
+	Escribir "Calificacion:",cal," esta en el nivel: ",let
+	
+FinAlgoritmo
